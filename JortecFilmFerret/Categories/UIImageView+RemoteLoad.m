@@ -30,16 +30,20 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:url] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-
+    [[session downloadTaskWithURL:[NSURL URLWithString:url] completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
-        if(! error && data)
+        if(! error && location)
         {
+            NSData *data = [NSData dataWithContentsOfFile:[location path]];
             UIImage *image = [UIImage imageWithData:data];
-            self.image = image;
             [[RFSimpleImageCache sharedSimpleImageCache] addImage:image key:url];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.image = image;
+            });
         }
-    }]resume];
+        
+    }] resume];
 }
 @end

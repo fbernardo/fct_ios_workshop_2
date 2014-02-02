@@ -33,8 +33,12 @@ static NSString * kMovieURL = @"https://api.themoviedb.org/3/movie/upcoming?api_
                        movies = (NSArray*)moviesJSON[@"results"];
                    }
                    
-                   if(handler)
-                       handler(movies);
+                   if(handler) {
+                       dispatch_async(dispatch_get_main_queue(), ^{
+                           handler(movies);
+                       });
+                   }
+                   
  
                }] resume];}
 
