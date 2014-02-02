@@ -12,7 +12,7 @@
 
 - (NSString*)fullPosterURL
 {
-    return [NSString stringWithFormat:@"http://image.tmdb.org/t/p/w500/%@", self];
+    return [NSString stringWithFormat:@"http://image.tmdb.org/t/p/w342/%@", self];
 }
 
 @end
