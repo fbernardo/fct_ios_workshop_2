@@ -12,11 +12,6 @@ static NSString * kMovieURL = @"https://api.themoviedb.org/3/movie/upcoming?api_
 
 @implementation MovieManager
 
-// https://api.themoviedb.org/3/movie/upcoming?api_key=ea644a530ad78ae928787551fdee1f16
-// http://docs.themoviedb.apiary.io/
-
-// http://www.raywenderlich.com/51127/nsurlsession-tutorial
-
 - (void)fetchMoviesWithAdult:(BOOL)adult completionHandler:(void (^)(NSArray* movies))handler
 {
     NSURLSession *session = [NSURLSession sharedSession];
@@ -40,7 +35,7 @@ static NSString * kMovieURL = @"https://api.themoviedb.org/3/movie/upcoming?api_
                    }
                    
  
-               }] resume];}
-
+               }] resume];
+}
 
 @end
