@@ -25,7 +25,6 @@
 		4CBC9163188973190008D50C /* MovieGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC9161188973190008D50C /* MovieGridCell.m */; };
 		4CC2749D189937FB00F97F95 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2749C189937FB00F97F95 /* MovieDetailViewController.m */; };
 		4CC274A01899389C00F97F95 /* MovieDetailGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2749F1899389C00F97F95 /* MovieDetailGridCell.m */; };
-		4CC274A21899453500F97F95 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 4CC274A11899453500F97F95 /* TODO */; };
 		4CE785731897E83300B98C52 /* NSString+MovieDBURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE785721897E83300B98C52 /* NSString+MovieDBURL.m */; };
 		4CE785761897E86200B98C52 /* UIImage+WithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE785751897E86200B98C52 /* UIImage+WithColor.m */; };
 		4CE7857A1897EDEB00B98C52 /* RFSimpleImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE785791897EDEB00B98C52 /* RFSimpleImageCache.m */; };
@@ -70,7 +69,6 @@
 		4CC2749C189937FB00F97F95 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieDetailViewController.m; path = ViewControllers/MovieDetailViewController.m; sourceTree = "<group>"; };
 		4CC2749E1899389C00F97F95 /* MovieDetailGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieDetailGridCell.h; path = Views/MovieDetailGridCell.h; sourceTree = "<group>"; };
 		4CC2749F1899389C00F97F95 /* MovieDetailGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieDetailGridCell.m; path = Views/MovieDetailGridCell.m; sourceTree = "<group>"; };
-		4CC274A11899453500F97F95 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		4CE785711897E83300B98C52 /* NSString+MovieDBURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MovieDBURL.h"; path = "Categories/NSString+MovieDBURL.h"; sourceTree = "<group>"; };
 		4CE785721897E83300B98C52 /* NSString+MovieDBURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MovieDBURL.m"; path = "Categories/NSString+MovieDBURL.m"; sourceTree = "<group>"; };
 		4CE785741897E86200B98C52 /* UIImage+WithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+WithColor.h"; path = "Categories/UIImage+WithColor.h"; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		4CBC911718896D7A0008D50C = {
 			isa = PBXGroup;
 			children = (
-				4CC274A11899453500F97F95 /* TODO */,
 				4CBC912918896D7B0008D50C /* JortecFilmFerret */,
 				4CBC914818896D7C0008D50C /* JortecFilmFerretTests */,
 				4CBC912218896D7B0008D50C /* Frameworks */,
@@ -313,7 +310,6 @@
 			files = (
 				4CBC913C18896D7C0008D50C /* Images.xcassets in Resources */,
 				4CBC912E18896D7B0008D50C /* InfoPlist.strings in Resources */,
-				4CC274A21899453500F97F95 /* TODO in Resources */,
 				4CBC913718896D7C0008D50C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
