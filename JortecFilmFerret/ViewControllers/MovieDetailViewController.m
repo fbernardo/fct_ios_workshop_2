@@ -45,11 +45,6 @@
 
 #pragma mark - UICollectionViewDataSource
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return 1;
-}
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.movies.count;
@@ -109,6 +104,13 @@
     }
     
     [self.navigationController setNavigationBarHidden:shouldShow animated:YES];
+}
+
+#pragma mark - UIViewController
+
+-(BOOL)prefersStatusBarHidden
+{
+    return self.navigationController.navigationBarHidden;
 }
 
 @end
