@@ -7,24 +7,15 @@
 //
 
 #import "MovieGridCell.h"
-#import "UIImage+WithColor.h"
 
 @implementation MovieGridCell
-
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
 
 - (void)prepareForReuse
 {
     [super prepareForReuse];
     
-    self.movieImage.image = [UIImage imageNamed:@"place_holder.png"];
+    self.movieImage.image = [UIImage imageNamed:@"ph_image_small.png"];
+    self.movieImage.contentMode = UIViewContentModeCenter;
     self.movieTitle.text = nil;
 }
 

@@ -26,7 +26,6 @@
 		4CC2749D189937FB00F97F95 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2749C189937FB00F97F95 /* MovieDetailViewController.m */; };
 		4CC274A01899389C00F97F95 /* MovieDetailGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2749F1899389C00F97F95 /* MovieDetailGridCell.m */; };
 		4CE785731897E83300B98C52 /* NSString+MovieDBURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE785721897E83300B98C52 /* NSString+MovieDBURL.m */; };
-		4CE785761897E86200B98C52 /* UIImage+WithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE785751897E86200B98C52 /* UIImage+WithColor.m */; };
 		4CE7857A1897EDEB00B98C52 /* RFSimpleImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE785791897EDEB00B98C52 /* RFSimpleImageCache.m */; };
 		4CE7857D1897F20A00B98C52 /* UIImageView+RemoteLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7857C1897F20A00B98C52 /* UIImageView+RemoteLoad.m */; };
 /* End PBXBuildFile section */
@@ -71,8 +70,6 @@
 		4CC2749F1899389C00F97F95 /* MovieDetailGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieDetailGridCell.m; path = Views/MovieDetailGridCell.m; sourceTree = "<group>"; };
 		4CE785711897E83300B98C52 /* NSString+MovieDBURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MovieDBURL.h"; path = "Categories/NSString+MovieDBURL.h"; sourceTree = "<group>"; };
 		4CE785721897E83300B98C52 /* NSString+MovieDBURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MovieDBURL.m"; path = "Categories/NSString+MovieDBURL.m"; sourceTree = "<group>"; };
-		4CE785741897E86200B98C52 /* UIImage+WithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+WithColor.h"; path = "Categories/UIImage+WithColor.h"; sourceTree = "<group>"; };
-		4CE785751897E86200B98C52 /* UIImage+WithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WithColor.m"; path = "Categories/UIImage+WithColor.m"; sourceTree = "<group>"; };
 		4CE785781897EDEB00B98C52 /* RFSimpleImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFSimpleImageCache.h; path = Helpers/RFSimpleImageCache.h; sourceTree = "<group>"; };
 		4CE785791897EDEB00B98C52 /* RFSimpleImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFSimpleImageCache.m; path = Helpers/RFSimpleImageCache.m; sourceTree = "<group>"; };
 		4CE7857B1897F20A00B98C52 /* UIImageView+RemoteLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RemoteLoad.h"; path = "Categories/UIImageView+RemoteLoad.h"; sourceTree = "<group>"; };
@@ -106,8 +103,6 @@
 		4C5FC83F1896941400215FBF /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				4CE785741897E86200B98C52 /* UIImage+WithColor.h */,
-				4CE785751897E86200B98C52 /* UIImage+WithColor.m */,
 				4CE785711897E83300B98C52 /* NSString+MovieDBURL.h */,
 				4CE785721897E83300B98C52 /* NSString+MovieDBURL.m */,
 				4CE7857B1897F20A00B98C52 /* UIImageView+RemoteLoad.h */,
@@ -337,7 +332,6 @@
 				4CE7857D1897F20A00B98C52 /* UIImageView+RemoteLoad.m in Sources */,
 				4CBC913018896D7B0008D50C /* main.m in Sources */,
 				4CE785731897E83300B98C52 /* NSString+MovieDBURL.m in Sources */,
-				4CE785761897E86200B98C52 /* UIImage+WithColor.m in Sources */,
 				4CBC9160188972FF0008D50C /* MovieGridViewController.m in Sources */,
 				4CC274A01899389C00F97F95 /* MovieDetailGridCell.m in Sources */,
 			);

@@ -17,10 +17,13 @@
 {
     UIImage *image = [[RFSimpleImageCache sharedSimpleImageCache] imageForKey:url];
     
-    if(! image)
+    if(! image) {
         [self loadRemoteImageFromURL:url];
-    else
+    }
+    else {
         self.image = image;
+        self.contentMode = UIViewContentModeScaleAspectFill;
+    }
 }
 
 #pragma mark - Private methods
@@ -41,6 +44,7 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.image = image;
+                self.contentMode = UIViewContentModeScaleAspectFill;
             });
         }
         

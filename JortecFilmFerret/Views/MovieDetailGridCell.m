@@ -10,20 +10,12 @@
 
 @implementation MovieDetailGridCell
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
 - (void)prepareForReuse
 {
     [super prepareForReuse];
     
-    self.posterImage.image = [UIImage imageNamed:@"place_holder.png"];
+    self.posterImage.image = [UIImage imageNamed:@"ph_image_small.png"];
+    self.posterImage.contentMode = UIViewContentModeCenter;
 }
 
 @end
