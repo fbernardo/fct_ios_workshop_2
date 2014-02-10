@@ -96,9 +96,12 @@
     cell.movieTitle.text = movieData[@"title"];
     
     NSString *movieURL = (NSString*) movieData[@"poster_path"];
-    movieURL = [movieURL fullPosterURL];
     
-    [cell.movieImage setRemoteImageFromURL: movieURL];
+    if(![movieURL isEqual:[NSNull null]])
+    {
+        movieURL = [movieURL fullPosterURL];
+        [cell.movieImage setRemoteImageFromURL: movieURL];
+    }
 
     return cell;
 }

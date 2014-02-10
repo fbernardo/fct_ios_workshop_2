@@ -62,9 +62,12 @@
     NSDictionary *movieData = self.movies[indexPath.row];
     
     NSString *movieURL = (NSString*) movieData[@"poster_path"];
-    movieURL = [movieURL fullPosterURL];
     
-    [cell.posterImage setRemoteImageFromURL: movieURL];
+    if(![movieURL isEqual:[NSNull null]])
+    {
+        movieURL = [movieURL fullPosterURL];
+        [cell.posterImage setRemoteImageFromURL: movieURL];
+    }
     
     return cell;
 }
