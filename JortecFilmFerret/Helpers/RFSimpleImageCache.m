@@ -8,11 +8,9 @@
 
 #import "RFSimpleImageCache.h"
 
-static NSInteger kMaxNumImages = 20;
-
 @interface RFSimpleImageCache ()
 
-@property (nonatomic,strong) NSMutableDictionary *dictionary;
+@property (nonatomic,strong) NSCache *dictionary;
 
 @end
 
@@ -20,20 +18,16 @@ static NSInteger kMaxNumImages = 20;
 
 #pragma mark - Init
 
-- (instancetype)init
-{
-    if(self = [super init])
-    {
-        self.dictionary = [NSMutableDictionary dictionary];
-    }
-    
+- (instancetype)init {
+    if(self = [super init]) {
+        self.dictionary = [[NSCache alloc] init];
+    }    
     return self;
 }
 
 #pragma mark - Public methods 
 
-+ (instancetype)sharedSimpleImageCache
-{
++ (instancetype)sharedSimpleImageCache {
     static RFSimpleImageCache *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -42,21 +36,15 @@ static NSInteger kMaxNumImages = 20;
     return sharedInstance;
 }
 
-- (void)addImage: (UIImage*)image key: (NSString*) key
-{
-    if(self.dictionary.count >= kMaxNumImages)
-       [self clearCache]; // Brute force!
-    
+- (void)addImage: (UIImage*)image key: (NSString*) key {
     [self.dictionary setObject:image forKey:key];
 }
 
-- (UIImage*) imageForKey: (NSString*) key
-{
-    return (UIImage*) self.dictionary[key];
+- (UIImage*) imageForKey: (NSString*) key {
+    return [self.dictionary objectForKey:key];
 }
 
-- (void)clearCache
-{
+- (void)clearCache {
     [self.dictionary removeAllObjects];
 }
 

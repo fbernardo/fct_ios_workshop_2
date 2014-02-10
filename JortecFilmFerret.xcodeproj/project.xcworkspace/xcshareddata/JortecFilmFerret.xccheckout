@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>63192368-98EB-4D41-B6EC-D1B0B79838C9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JortecFilmFerret</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E525BE5A-0709-4887-B821-C5EBA9C7627D</key>
+		<string>ssh://github.com/fbernardo/fct_ios_workshop_2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JortecFilmFerret.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E525BE5A-0709-4887-B821-C5EBA9C7627D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/fbernardo/fct_ios_workshop_2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E525BE5A-0709-4887-B821-C5EBA9C7627D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E525BE5A-0709-4887-B821-C5EBA9C7627D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fct_ios_workshop_2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

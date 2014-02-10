@@ -8,7 +8,7 @@
 
 #import "MovieManager.h"
 
-static NSString * kMovieURL = @"https://api.themoviedb.org/3/movie/upcoming?api_key=ea644a530ad78ae928787551fdee1f16";
+static NSString * kMovieURL = @"https://api.themoviedb.org/3/movie/popular?api_key=ea644a530ad78ae928787551fdee1f16";
 
 @implementation MovieManager
 
