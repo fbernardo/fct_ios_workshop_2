@@ -28,17 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.title = @"Da Movies";
     
     self.moviesGrid.hidden = YES;
 
-    self.activityIndicator.hidden = NO;
-    [self.activityIndicator startAnimating];
-    
     MovieManager *movieManager = [MovieManager new];
-    [movieManager fetchMoviesWithAdult:NO completionHandler:^(NSArray *movies) {
-
-        [self.activityIndicator stopAnimating];
+    [movieManager fetchPopularMoviesForYear:1992 includeAdult:YES completionHandler:^(NSArray *movies) {
 
         if(movies)
         {
@@ -70,18 +66,7 @@
     }];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.navigationItem.title = @"Da Movies";
-}
-
 #pragma mark - UICollectionViewDataSource
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return 1;
-}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -113,7 +98,7 @@
     if([segue.identifier isEqualToString:@"gridToDetailSegue"])
     {
         NSArray *selectedIndexPaths = [self.moviesGrid indexPathsForSelectedItems];
-        NSIndexPath *selectedIndexPath = (NSIndexPath*)selectedIndexPaths[0];
+        NSIndexPath *selectedIndexPath = [selectedIndexPaths firstObject];
         
         MovieDetailViewController *movieDetailVC = (MovieDetailViewController *) segue.destinationViewController;
         movieDetailVC.movies = self.movies;

@@ -57,16 +57,11 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Gj1-FD-La3"/>
                                 </connections>
                             </collectionView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="qwy-X1-N6b">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Da Movies" id="ptF-LZ-6Na"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="qwy-X1-N6b" id="rYT-NX-Jmm"/>
                         <outlet property="moviesGrid" destination="r26-JU-zxH" id="tNR-gq-bfx"/>
                     </connections>
                 </viewController>

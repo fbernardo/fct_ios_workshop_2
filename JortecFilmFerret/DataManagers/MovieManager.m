@@ -8,14 +8,17 @@
 
 #import "MovieManager.h"
 
-static NSString * kMovieURL = @"https://api.themoviedb.org/3/movie/popular?api_key=ea644a530ad78ae928787551fdee1f16";
+//static NSString * kMovieURL = @"https://api.themoviedb.org/3/movie/popular?api_key=ea644a530ad78ae928787551fdee1f16";
+static NSString * kMovieURL = @"https://api.themoviedb.org/3/discover/movie?api_key=ea644a530ad78ae928787551fdee1f16&include_adult=%@&primary_release_year=%d&sort_by=popularity.desc";
 
 @implementation MovieManager
 
-- (void)fetchMoviesWithAdult:(BOOL)adult completionHandler:(void (^)(NSArray* movies))handler
+- (void)fetchPopularMoviesForYear:(NSUInteger)year includeAdult:(BOOL)adult completionHandler:(void (^)(NSArray* movies))handler
 {
+    
+    NSString *url = [NSString stringWithFormat:kMovieURL, adult ? @"true" : @"false", year];
     NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:kMovieURL]
+    [[session dataTaskWithURL:[NSURL URLWithString:url]
                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
 
                    NSArray *movies = nil;

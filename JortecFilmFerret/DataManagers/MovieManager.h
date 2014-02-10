@@ -10,6 +10,6 @@
 
 @interface MovieManager : NSObject
 
-- (void)fetchMoviesWithAdult:(BOOL)adult completionHandler:(void (^)(NSArray* movies))handler;
+- (void)fetchPopularMoviesForYear:(NSUInteger)year includeAdult:(BOOL)adult completionHandler:(void (^)(NSArray* movies))handler;
 
 @end
