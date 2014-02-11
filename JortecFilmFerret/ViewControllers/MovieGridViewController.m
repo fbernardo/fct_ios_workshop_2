@@ -34,7 +34,7 @@
     self.moviesGrid.hidden = YES;
 
     MovieManager *movieManager = [MovieManager new];
-    [movieManager fetchPopularMoviesForYear:1992 includeAdult:YES completionHandler:^(NSArray *movies) {
+    [movieManager fetchPopularMoviesForYear:1980 includeAdult:YES completionHandler:^(NSArray *movies) {
 
         if(movies)
         {

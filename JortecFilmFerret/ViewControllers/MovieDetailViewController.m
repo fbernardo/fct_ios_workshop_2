@@ -26,9 +26,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    self.navigationController.navigationBar.topItem.title = @"";
-    
+
     NSDictionary *movie = (NSDictionary*)self.movies[self.selectedMovieIndex];
     self.navigationItem.title = movie[@"title"];
     
