@@ -16,11 +16,6 @@
 		4CBC913418896D7B0008D50C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC913318896D7B0008D50C /* AppDelegate.m */; };
 		4CBC913718896D7C0008D50C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC913518896D7C0008D50C /* Main.storyboard */; };
 		4CBC913C18896D7C0008D50C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC913B18896D7C0008D50C /* Images.xcassets */; };
-		4CBC914318896D7C0008D50C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBC914218896D7C0008D50C /* XCTest.framework */; };
-		4CBC914418896D7C0008D50C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBC912318896D7B0008D50C /* Foundation.framework */; };
-		4CBC914518896D7C0008D50C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBC912718896D7B0008D50C /* UIKit.framework */; };
-		4CBC914D18896D7C0008D50C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC914B18896D7C0008D50C /* InfoPlist.strings */; };
-		4CBC914F18896D7C0008D50C /* JortecFilmFerretTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC914E18896D7C0008D50C /* JortecFilmFerretTests.m */; };
 		4CBC9160188972FF0008D50C /* MovieGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC915F188972FF0008D50C /* MovieGridViewController.m */; };
 		4CBC9163188973190008D50C /* MovieGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC9161188973190008D50C /* MovieGridCell.m */; };
 		4CC2749D189937FB00F97F95 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2749C189937FB00F97F95 /* MovieDetailViewController.m */; };
@@ -29,16 +24,6 @@
 		4CE7857A1897EDEB00B98C52 /* RFSimpleImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE785791897EDEB00B98C52 /* RFSimpleImageCache.m */; };
 		4CE7857D1897F20A00B98C52 /* UIImageView+RemoteLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7857C1897F20A00B98C52 /* UIImageView+RemoteLoad.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4CBC914618896D7C0008D50C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CBC911818896D7B0008D50C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CBC911F18896D7B0008D50C;
-			remoteInfo = JortecFilmFerret;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4C5FC84318969A0E00215FBF /* MovieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieManager.h; path = DataManagers/MovieManager.h; sourceTree = "<group>"; };
@@ -55,11 +40,7 @@
 		4CBC913318896D7B0008D50C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4CBC913618896D7C0008D50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CBC913B18896D7C0008D50C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4CBC914118896D7C0008D50C /* JortecFilmFerretTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JortecFilmFerretTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBC914218896D7C0008D50C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4CBC914A18896D7C0008D50C /* JortecFilmFerretTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JortecFilmFerretTests-Info.plist"; sourceTree = "<group>"; };
-		4CBC914C18896D7C0008D50C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CBC914E18896D7C0008D50C /* JortecFilmFerretTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JortecFilmFerretTests.m; sourceTree = "<group>"; };
 		4CBC915E188972FF0008D50C /* MovieGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieGridViewController.h; path = ViewControllers/MovieGridViewController.h; sourceTree = "<group>"; };
 		4CBC915F188972FF0008D50C /* MovieGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieGridViewController.m; path = ViewControllers/MovieGridViewController.m; sourceTree = "<group>"; };
 		4CBC9161188973190008D50C /* MovieGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieGridCell.m; path = Views/MovieGridCell.m; sourceTree = "<group>"; };
@@ -87,16 +68,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CBC913E18896D7C0008D50C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CBC914318896D7C0008D50C /* XCTest.framework in Frameworks */,
-				4CBC914518896D7C0008D50C /* UIKit.framework in Frameworks */,
-				4CBC914418896D7C0008D50C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				4CBC912918896D7B0008D50C /* JortecFilmFerret */,
-				4CBC914818896D7C0008D50C /* JortecFilmFerretTests */,
 				4CBC912218896D7B0008D50C /* Frameworks */,
 				4CBC912118896D7B0008D50C /* Products */,
 			);
@@ -125,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				4CBC912018896D7B0008D50C /* JortecFilmFerret.app */,
-				4CBC914118896D7C0008D50C /* JortecFilmFerretTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,24 +134,6 @@
 				4CBC912C18896D7B0008D50C /* InfoPlist.strings */,
 				4CBC912F18896D7B0008D50C /* main.m */,
 				4CBC913118896D7B0008D50C /* JortecFilmFerret-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4CBC914818896D7C0008D50C /* JortecFilmFerretTests */ = {
-			isa = PBXGroup;
-			children = (
-				4CBC914E18896D7C0008D50C /* JortecFilmFerretTests.m */,
-				4CBC914918896D7C0008D50C /* Supporting Files */,
-			);
-			path = JortecFilmFerretTests;
-			sourceTree = "<group>";
-		};
-		4CBC914918896D7C0008D50C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4CBC914A18896D7C0008D50C /* JortecFilmFerretTests-Info.plist */,
-				4CBC914B18896D7C0008D50C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -247,24 +198,6 @@
 			productReference = 4CBC912018896D7B0008D50C /* JortecFilmFerret.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4CBC914018896D7C0008D50C /* JortecFilmFerretTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4CBC915518896D7C0008D50C /* Build configuration list for PBXNativeTarget "JortecFilmFerretTests" */;
-			buildPhases = (
-				4CBC913D18896D7C0008D50C /* Sources */,
-				4CBC913E18896D7C0008D50C /* Frameworks */,
-				4CBC913F18896D7C0008D50C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4CBC914718896D7C0008D50C /* PBXTargetDependency */,
-			);
-			name = JortecFilmFerretTests;
-			productName = JortecFilmFerretTests;
-			productReference = 4CBC914118896D7C0008D50C /* JortecFilmFerretTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,11 +206,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = JFF;
-				TargetAttributes = {
-					4CBC914018896D7C0008D50C = {
-						TestTargetID = 4CBC911F18896D7B0008D50C;
-					};
-				};
 			};
 			buildConfigurationList = 4CBC911B18896D7B0008D50C /* Build configuration list for PBXProject "JortecFilmFerret" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -293,7 +221,6 @@
 			projectRoot = "";
 			targets = (
 				4CBC911F18896D7B0008D50C /* JortecFilmFerret */,
-				4CBC914018896D7C0008D50C /* JortecFilmFerretTests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,14 +233,6 @@
 				4CBC913C18896D7C0008D50C /* Images.xcassets in Resources */,
 				4CBC912E18896D7B0008D50C /* InfoPlist.strings in Resources */,
 				4CBC913718896D7C0008D50C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CBC913F18896D7C0008D50C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CBC914D18896D7C0008D50C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,23 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CBC913D18896D7C0008D50C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CBC914F18896D7C0008D50C /* JortecFilmFerretTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4CBC914718896D7C0008D50C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4CBC911F18896D7B0008D50C /* JortecFilmFerret */;
-			targetProxy = 4CBC914618896D7C0008D50C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4CBC912C18896D7B0008D50C /* InfoPlist.strings */ = {
@@ -370,14 +273,6 @@
 				4CBC913618896D7C0008D50C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4CBC914B18896D7C0008D50C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CBC914C18896D7C0008D50C /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -481,48 +376,6 @@
 			};
 			name = Release;
 		};
-		4CBC915618896D7C0008D50C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JortecFilmFerret.app/JortecFilmFerret";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JortecFilmFerret/JortecFilmFerret-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "JortecFilmFerretTests/JortecFilmFerretTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		4CBC915718896D7C0008D50C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JortecFilmFerret.app/JortecFilmFerret";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JortecFilmFerret/JortecFilmFerret-Prefix.pch";
-				INFOPLIST_FILE = "JortecFilmFerretTests/JortecFilmFerretTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -540,15 +393,6 @@
 			buildConfigurations = (
 				4CBC915318896D7C0008D50C /* Debug */,
 				4CBC915418896D7C0008D50C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4CBC915518896D7C0008D50C /* Build configuration list for PBXNativeTarget "JortecFilmFerretTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4CBC915618896D7C0008D50C /* Debug */,
-				4CBC915718896D7C0008D50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
