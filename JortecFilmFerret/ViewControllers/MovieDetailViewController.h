@@ -14,7 +14,6 @@
 
 @property (nonatomic,strong) NSArray *movies;
 @property (nonatomic,readwrite) NSInteger selectedMovieIndex;
-@property (nonatomic, readwrite) BOOL shouldHideStatusBar;
 
 - (IBAction)didTapView:(UITapGestureRecognizer *)sender;
 

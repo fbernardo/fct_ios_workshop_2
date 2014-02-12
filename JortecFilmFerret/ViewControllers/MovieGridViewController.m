@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"Da Movies";
+    self.navigationItem.title = @"1992 Movies";
     
     self.moviesGrid.hidden = YES;
 
